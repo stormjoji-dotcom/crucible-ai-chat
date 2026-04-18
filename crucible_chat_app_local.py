@@ -79,6 +79,7 @@ input {
 }
 </style>
 """, unsafe_allow_html=True)
+
 .stApp {
     background: linear-gradient(135deg, #101014 0%, #17171d 55%, #1f1a1a 100%);
 }
