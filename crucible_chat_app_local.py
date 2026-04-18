@@ -80,66 +80,6 @@ input {
 </style>
 """, unsafe_allow_html=True)
 
-.stApp {
-    background: linear-gradient(135deg, #101014 0%, #17171d 55%, #1f1a1a 100%);
-}
-.block-container {
-    padding-top: 1.2rem;
-    padding-bottom: 1.5rem;
-    max-width: 1450px;
-}
-.top-title {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 18px;
-    padding: 20px 24px;
-    margin-bottom: 18px;
-}
-.top-title h1 {
-    margin: 0;
-    color: #f7f2ea;
-    font-size: 2.4rem;
-}
-.top-title p {
-    margin: 8px 0 0 0;
-    color: #d9d0c4;
-    font-size: 1rem;
-}
-.side-card, .status-card, .chat-header, .big-image-wrap {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 18px;
-    padding: 14px 16px;
-    margin-bottom: 14px;
-}
-.affection-box {
-    background: rgba(255,90,120,0.08);
-    border: 1px solid rgba(255,90,120,0.18);
-    border-radius: 16px;
-    padding: 12px 14px;
-    margin-top: 8px;
-}
-.tip {
-    color: #d2c8bc;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-.small-status {
-    color: #efe6d8;
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
-.event-box {
-    background: rgba(255,215,120,0.08);
-    border: 1px solid rgba(255,215,120,0.16);
-    border-radius: 16px;
-    padding: 12px 14px;
-    margin-bottom: 12px;
-    color: #f6e7ca;
-}
-</style>
-""", unsafe_allow_html=True)
-
 CHARACTERS = {
     "아비게일 윌리엄즈": {
         "folder": "abigail",
