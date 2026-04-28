@@ -8,6 +8,8 @@ st.set_page_config(page_title="시련 인터랙션", page_icon="🎭", layout="w
 IMAGE_ROOT = Path("images")
 ABIGAIL_NAME = "아비게일 윌리엄즈"
 ABIGAIL_STORY_KEY = "abigail_story"
+STORY_LOG_HEIGHT = 360
+FREE_CHAT_HEIGHT = 520
 
 st.markdown(
     """
@@ -772,7 +774,7 @@ def render_name_event(char_name: str, messages: list[dict]):
 
 
 def render_chat_history(messages: list[dict], char_name: str):
-    chat_area = st.container(height=520)
+    chat_area = st.container(height=FREE_CHAT_HEIGHT)
     with chat_area:
         for msg in messages:
             speaker = "나" if msg["role"] == "user" else char_name
@@ -792,7 +794,7 @@ def render_story_progress():
 
 def render_story_log():
     story = st.session_state.story_state[ABIGAIL_STORY_KEY]
-    log_area = st.container(height=520)
+    log_area = st.container(height=STORY_LOG_HEIGHT)
     with log_area:
         for entry in story["story_log"]:
             if entry["kind"] == "narration":
